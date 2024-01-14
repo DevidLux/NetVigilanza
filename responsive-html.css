@@ -1,0 +1,120 @@
+/*       TABLET SIZE           */
+
+/* responsive-html.css or a new CSS file for responsiveness */
+@media screen and (max-width: 800px) {
+  /*      NAVBAR        */
+
+  .navbar {
+    display: none;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: large;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .mobile-menu li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  /*          HERO   SECTION    */
+
+  .text-container {
+    width: 400px;
+    font-size: large;
+  }
+
+  .firstview {
+    width: auto;
+    margin-left: -800px;
+  }
+
+  /*      PUNTI DI FORZA    */
+
+  .puntidiforza .wrapper .cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /*     TESTIMONIAL SECTION      */
+
+  .testimonial img {
+    display: none;
+  }
+
+  .testimonial {
+    gap: 0;
+  }
+
+  /* 
+   */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*          SERVIZI       */
+
+  .upper-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upper-cards p {
+    font-size: larger;
+  }
+
+  .bottom-cards p {
+    font-size: larger;
+  }
+
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*         CONTATTI          */
+
+  .mail-form {
+    width: auto;
+  }
+
+  .mail-form .mail-text textarea {
+    width: 83%;
+    height: 350px;
+  }
+
+  .mail-form .mail-number input {
+    width: 83%;
+  }
+
+  .mail-form .mail-mail input {
+    width: 83%;
+  }
+}

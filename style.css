@@ -1,0 +1,489 @@
+body {
+  overflow-x: hidden;
+}
+
+/*           WRAPPER          */
+.wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/*          HEADER            */
+.firstview {
+  width: 100vw;
+  height: 88vh;
+  z-index: -1;
+}
+/*          NAVBAR            */
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 16px 80px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--neutralxlight);
+  margin-left: 56px;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-wrapper {
+  font-weight: 700 !important;
+  color: var(--secondarydark) !important;
+}
+
+.btn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--Secondary-Dark, #1e93e8);
+  color: var(--Neutral-XLight, #ecf1f5);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-btn {
+  text-decoration: none;
+}
+
+/*         HERO SECTION            */
+
+.text-container {
+  position: absolute;
+  top: 366px;
+  left: 83px;
+  width: 638px;
+  display: flex;
+  padding: 48px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.text-container h1 {
+  color: var(--neutralxlight);
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-container p {
+  color: var(--neutralxlight);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*          PUNTI DI FORZA           */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding: 108px 80px;
+}
+
+.cards div {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid var(--Primary-Light, #9691b8);
+  background: var(--Neutral-XLight, #ecf1f5);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cards hr {
+  width: 254px;
+  height: 1px;
+  background: #9691b8;
+}
+
+.cards p {
+  color: var(--Primary-Medium, #58518c);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cards h2 {
+  color: var(--Primary-Dark, #312783);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*              FINE       PUNTI DI FORZA        */
+
+/*  */
+/*  */
+/*  */
+
+/*                TESTIMONIALS              */
+
+.testimonial {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  gap: 160px;
+  justify-content: space-between;
+  padding-bottom: 107px;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.left-text h2 {
+  color: var(--Primary-Dark, #312783);
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.left-text p {
+  color: var(--Neutral-Medium, #83888e);
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+/*          FINE   TESTIMONIALS        */
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*           FOOTER                  */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: flex-start;
+  padding: 35px 80px;
+  background: var(--Primary-Medium, #58518c);
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.footer h3 {
+  color: var(--Neutral-XLight, #ecf1f5);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer p {
+  color: var(--Primary-Light, #9691b8);
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*    CARDS SECTION       */
+
+.upper-cards {
+  display: flex;
+  width: auto;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+
+.bottom-cards {
+  display: flex;
+  width: auto;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  justify-content: space-between;
+}
+
+.frame {
+  position: relative;
+  box-shadow: 0px 4px 10px #00000040;
+  border-radius: 0px 0px 10px 10px;
+  height: 568px;
+}
+
+.cards-text {
+  border-radius: 0px 0px 10px 10px;
+  padding: 35px 20px 0px;
+  width: 507px;
+  padding-bottom: 64px;
+}
+
+.cards-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--primarydark);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.cards-text p {
+  font-family: "Merriweather", Helvetica;
+  font-weight: 400;
+  color: var(--neutraldark);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+*/
+
+/*              CONTATTI               */
+
+.contatti-text {
+  padding-bottom: 40px;
+  padding-top: 55px;
+}
+
+.contatti-text h3 {
+  font-family: "Merriweather-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--primarydark);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contatti-text p {
+  font-family: "Merriweather-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--neutralmedium);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mail-form {
+  position: relative;
+  width: 1037px;
+  height: 917px;
+
+  background-color: var(--secondarylight);
+  border-radius: 10px;
+}
+
+.mail-form input {
+  background-color: var(--neutralxlight);
+  border-radius: 10px;
+  width: 266px;
+  height: 56px;
+}
+
+.mail-form input::placeholder {
+  font-family: "Merriweather-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--primarylight);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 8px;
+}
+
+textarea {
+  width: 958px;
+  height: 448px;
+  background-color: var(--neutralxlight);
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-family: "Merriweather-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--primarylight);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-top: 16px;
+  padding-left: 8px;
+}
+
+form button {
+  display: flex;
+  width: 141px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  position: relative;
+  background-color: var(--primarydark);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  color: var(--neutralxlight);
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 428px;
+  margin-left: 40px;
+  gap: 37px;
+  padding-top: 40px;
+}
+
+.mail-mail input {
+  width: 494px;
+}
+
+.mail-mail {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.mail-number input {
+  width: 494px;
+}
+
+.mail-number {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.mail-text {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.form-button {
+  padding-top: 48px;
+  padding-left: 40px;
+}
